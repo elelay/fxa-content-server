@@ -143,7 +143,7 @@ function makeHttpRedirectApp () {
 
 function listenHttpRedirectApp(httpApp) {
   'use strict';
-  var httpPort = config.get('use_https') ? 80 : config.get('http_port');
+  var httpPort = config.get('use_https') ? 8081 : config.get('http_port');
 
   httpApp.listen(httpPort, '0.0.0.0');
   if (isMain) {
